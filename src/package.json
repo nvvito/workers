@@ -1,0 +1,23 @@
+{
+  "name": "workers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm i && node index.js",
+    "start-dev": "npm run dev-server & npm run dev-client",
+    "dev-server": "npm i && nodemon index.js",
+    "dev-client": "cd client && npm i && npm start"
+  },
+  "author": "vito",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.1.13"
+  }
+}

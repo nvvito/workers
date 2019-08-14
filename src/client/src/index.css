@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#root{
+  padding-bottom: 30px;
+}
+.login-form-button {
+  width: 100%;
+}
+.form-card{
+  width: 300px;
+  margin: 20px auto 0 auto !important;
+}
+.list-body{
+  max-width: 700px;
+  margin: 20px auto 0px auto;
+}
+.ListPagination{
+  margin-top: 20px !important;
+  text-align: center;
+}
+.add-user-btn{
+  position: fixed !important;
+  bottom: 10%;
+  right: 10%;
+}
+.ant-result{
+  padding: 20px !important;
+}
+.search-item{
+  display: flex;
+  flex-direction: column;
+}
+.search-item-name span:last-child{
+  color: rgb(38, 72, 168);
+  font-weight: 600;
+  font-size: 16px;
+}
+.search-item-age span:last-child{
+  color: rgb(98, 41, 155);
+  font-weight: 400;
+  font-size: 14px;
+}
