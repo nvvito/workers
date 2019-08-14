@@ -46,8 +46,10 @@ class workerCard extends React.Component {
         this.props.fetchWorker(this.props.match.params.id, this.props.token)
         this.props.fetchDepartments(this.props.token)
     }
-    componentWillReceiveProps(nextProps) {
-        if (nextProps.match.params.id !== this.props.match.params.id) this.props.fetchWorker(nextProps.match.params.id, this.props.token)
+    componentDidUpdate(nextProps) {
+        if (nextProps.match.params.id !== this.props.match.params.id) {
+            this.props.fetchWorker(this.props.match.params.id, this.props.token)
+        }
     }
     render() {
         let { worker, departments } = this.props
